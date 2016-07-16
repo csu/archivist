@@ -8,7 +8,10 @@ import json
 crontable = []
 outputs = []
 
-archive_dir = '/Users/christophersu/code/archivist-data'
+archive_dir = os.environ.get('SLACK_ARCHIVIST_OUTPUT_DIR')
+if not archive_dir:
+  print 'The SLACK_ARCHIVIST_OUTPUT_DIR env variable must be set.'
+  quit()
 
 if not os.path.exists(archive_dir):
   os.makedirs(archive_dir)
