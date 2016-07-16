@@ -19,7 +19,5 @@ if not os.path.exists(archive_dir):
 #   file_handlers[data['channel']].write(data + '\n')
 
 def process_message(data):
-  print data
-  print os.path.join(archive_dir, data['channel'] + '.txt')
   with open(os.path.join(archive_dir, data['channel'] + '.txt'), 'a') as f:
     f.write(json.dumps(data) + '\n')
