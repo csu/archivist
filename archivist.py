@@ -1,3 +1,6 @@
+# Christopher Su
+# 07/2016
+
 from __future__ import unicode_literals
 import os
 import json
