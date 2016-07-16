@@ -16,7 +16,9 @@ cd python-rtmbot
 # enter virtual env
 pip install -r requirements.txt
 
-git clone https://github.com/csu/archivist.git plugins
+cd plugins
+git clone https://github.com/csu/archivist.git
+cd ..
 
 cp doc/example-config/rtmbot.conf .
 vi rtmbot.conf
