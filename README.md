@@ -6,6 +6,7 @@ A Slack bot for managing chat archives.
 1. Install [python-rtmbot](https://github.com/slackhq/python-rtmbot)
 2. Run `git clone https://github.com/csu/archivist.git` in the `plugins` folder
 3. Configure rtmbot (see its readme)
+4. Set the `SLACK_ARCHIVIST_OUTPUT_DIR` env variable to the desired output directory
 4. Run rtmbot
 
 ### Example
@@ -22,6 +23,8 @@ cd ..
 
 cp doc/example-config/rtmbot.conf .
 vi rtmbot.conf
+
+env SLACK_ARCHIVIST_OUTPUT_DIR="/home/csu/archivist-data"
 
 ./rtmbot.py
 ```
