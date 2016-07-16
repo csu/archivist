@@ -24,7 +24,7 @@ cd ..
 cp doc/example-config/rtmbot.conf .
 vi rtmbot.conf
 
-env SLACK_ARCHIVIST_OUTPUT_DIR="/home/csu/archivist-data"
+export SLACK_ARCHIVIST_OUTPUT_DIR="/home/csu/archivist-data"
 
 ./rtmbot.py
 ```
