@@ -8,6 +8,22 @@ A Slack bot for managing chat archives.
 3. Configure rtmbot (see its readme)
 4. Run rtmbot
 
+### Example
+```bash
+git clone https://github.com/slackhq/python-rtmbot.git
+cd python-rtmbot
+# make virtual env
+# enter virtual env
+pip install -r requirements.txt
+
+git clone https://github.com/csu/archivist.git plugins
+
+cp doc/example-config/rtmbot.conf .
+vi rtmbot.conf
+
+./rtmbot.py
+```
+
 ## Contributing
 Pull requests and issues are welcome.
 
